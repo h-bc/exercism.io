@@ -5,6 +5,7 @@
   "license": "MIT",
   "devDependencies": {
     "eslint": "^3.19.0",
+    "eslint-config-prettier": "^2.3.0",
     "jest": "^20.0.4",
     "prettier": "^1.5.3"
   }
