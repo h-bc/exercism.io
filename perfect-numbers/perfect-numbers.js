@@ -28,13 +28,12 @@ PerfectNumbers.prototype.sumPrimeFactors = function (primeFactors) {
 PerfectNumbers.prototype.classify = function(number) {
   const primeFactors = this.getPrimeFactors(number);
   const aliquotSum = this.sumPrimeFactors(primeFactors) - number ; 
+  
   if (number < 1) {
     return 'Classification is only possible for natural numbers.';
   }
 
-  if (primeFactors.length === 1) {
-    return 'deficient';
-  }
+  
   if (aliquotSum === number) {
     return 'perfect';
   }
